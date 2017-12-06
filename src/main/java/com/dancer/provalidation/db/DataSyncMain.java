@@ -244,7 +244,7 @@ public class DataSyncMain {
 				+ "create_time,update_time,show_time,operator,operate_time,book_add_count,"
 				+ "book_count,fresh_time) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		PreparedStatement preparedStatement=connection.prepareStatement(insertSQL);
-		for(int index=20;index<30;index++){
+		for(int index=10020;index<30;index++){
 			preparedStatement.setLong(1, 3);
 			preparedStatement.setString(2, "3");
 			preparedStatement.setLong(3, index);
@@ -338,8 +338,8 @@ public class DataSyncMain {
 		
 //		selectLatestTime(0);
 //		delete();
-		update();
-//		selectBooklistSync();
+//		update();
+		selectBooklistSync();
 //		insertBooklistSync();
 	}
 

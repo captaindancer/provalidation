@@ -14,7 +14,10 @@ public class ModeMain {
 		System.out.println(test%1000/100);
 		
 		System.out.println(7/2);
-		LOGGER.warn("lala");
+		for(int index=0;index<10;index++){
+			LOGGER.warn("lala");
+			LOGGER.info("haha");
+		}
 	}
 
 }
